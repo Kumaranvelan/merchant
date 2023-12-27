@@ -1,0 +1,25 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input Graphqldto {
+  age: String
+  email: String
+  name: String
+  phone: Float
+}
+
+type Mutation {
+  createPerson(graphqldto: Graphqldto!): Person!
+}
+
+type Person {
+  age: String
+  email: String
+  name: String
+  phone: Float
+}
+
+type Query {
+  test(email: String!, graphqldto: Graphqldto!): Person
+}
